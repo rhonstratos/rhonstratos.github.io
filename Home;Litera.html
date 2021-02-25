@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("loginBG.png");
+            align-self: center;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+        ul.topBar li{
+            float: left;
+        }
+        ul.topBar li.generic{
+            padding-right: 30px;
+            margin-top: 18px;
+        }
+		
+		* {
+	        box-sizing: border-box;
+		}
+		.leftcolumn {   
+			float: left;
+			width: 65%;
+			margin-top: 10%;
+			margin-left: 10%;
+		}
+
+		.rightcolumn {
+			float: left;
+			width: 20%;
+			margin-top: 10%;
+			padding-left: 20px;
+		}
+
+		.fakeimg {
+			background-color: #aaa;
+			width: 100%;
+			padding: 20px;
+		}
+
+		.card {
+		   background-color: #C37C78;
+		   color: black;
+		   padding: 20px;
+		   margin-top: 20px;
+		   border-radius: 15px;
+		 
+		}
+
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		@media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {   
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul class="topBar" style="
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(195, 47, 176);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 75px;
+            font-family: 'Calibri';
+            font-size: 50px;
+            float: left;">
+        <li style="
+            display: block;
+            text-align: center;
+            padding-right: 70px;
+            text-decoration: none;
+            margin-top: 7px;">
+            <input type="image" name="profile" src="Search.png"
+                width="37px" height="37px" style="margin-left: 100px;">
+        </li>
+        <li class="searchbox">
+            <input type="text" placeholder="Search:" style="
+                height: 50px;
+                width: 660%;
+                margin-left: -50px;
+                margin-top: 11px;
+                vertical-align: top;
+                border: none;
+                outline: white;
+                font-size: medium;">
+        </li>
+        <li class="generic" style="float: right;">
+            <a href="Login;Litera.html">
+                <input type="image" name="rightB" src="DDown.png"
+                    width="37px" height="37px" style="float: right;">
+            </a>
+        </li>
+        <li class="generic" style="float: right;">
+            <input type="image" name="rightB" src="Message.png"
+                width="37px" height="37px" style="float: right;">
+        </li>
+        <li class="generic" style="float: right;">
+            <input type="image" name="rightB" src="Notif.png"
+                width="37px" height="37px" style="float: right;">
+        </li>
+    </ul>
+    <ul class="leftBar" style="
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(195, 47, 176);
+        position: fixed;
+        width: 75px;
+        height: 100%;
+        font-family: 'Calibri';
+        font-size: 50px;">
+        <li class="Home">
+            <a href="Home;Litera.html">
+                <input type="image" name="home" src="LiteraIcon.png"
+                    width="75px" height="75px" style="margin:0;">
+            </a>
+        </li>
+        <li>
+            <a href="Profile;Litera.html">
+                <input type="image" name="generic" src="Profile.png"
+                    width="69px" height="69px" style="padding: 0; margin: 3px;">
+            </a>
+            
+        </li>
+        <li class="PW">
+            <a href="#"><button style="
+                word-wrap: break-word;
+                color:white;
+                background-color: black;
+                height: 70px;
+                border-radius: 15px;
+                font-size: 12px;
+                width: 69px;
+                margin: 0 3px 0 3px">Published Works</button></a>
+        </li>
+        <li class="Cir">
+            <a href="#"><button style="
+                word-wrap: break-word;
+                color:white;
+                background-color: black;
+                height: 70px;
+                border-radius: 15px;
+                font-size: 17px;
+                width: 69px;
+                margin: 0 3px 0 3px">Circles</button></a>
+        </li>
+    </ul>
+	
+	<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TITLE STORY</h2>
+      <h5>Title description, February 14, 2021</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.</p>
+    </div>
+    <div class="card">
+      <h2>TITLE STORY</h2>
+      <h5>Title description, January 2, 2021</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h3>Top Works</h3>
+      <a href="url">Top 1</a><br><br>
+	  <a href="url">Top 2</a><br><br>
+	  <a href="url">Top 3</a><br><br>
+	  <a href="url">Top 4</a><br><br>
+	  <a href="url">Top 5</a><br><br>
+	  <a href="url">Top 6</a><br><br>
+	  <a href="url">Top 7</a><br><br>
+	  <a href="url">Top 8</a><br><br>
+	  <a href="url">Top 9</a><br><br>
+	  <a href="url">Top 10</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
